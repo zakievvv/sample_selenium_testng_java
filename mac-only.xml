@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mac Test Suite" parallel="none">
+    <test verbose="1" name="Mac Sample Report of Sample Tests">
+        <groups>
+            <run>
+                <include name="mac"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="local_browsers.SafariWithoutDriverManager"/>
+            <class name="local_browsers.ChromeWithoutDriverManager"/>
+            <class name="local_browsers.Chrome"/>
+            <class name="local_browsers.FirefoxWithoutDriverManager"/>
+            <class name="local_browsers.Firefox"/>
+            <class name="local_browsers.PhantomJSWithoutDriverManager"/>
+            <class name="local_browsers.PhantomJS"/>
+            <class name="local_browsers.OperaWithoutDriverManager"/>
+            <class name="local_browsers.Opera"/>
+        </classes>
+    </test> <!-- javajenkins -->
+</suite> <!-- Custom suite -->
